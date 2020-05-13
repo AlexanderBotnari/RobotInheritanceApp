@@ -6,8 +6,8 @@ public class BetaRobot extends AlphaRobot{
 
 	public BetaRobot() {}
 	public BetaRobot(String name, String model) {
-		super(name , model);
-		setCharge(0);
+        super(name , model);
+	setCharge(0);
         setX(0);
         setY(0);
 	}
@@ -23,51 +23,51 @@ public class BetaRobot extends AlphaRobot{
 	}
 	 @Override
 	public boolean moveRight() {
-       if(verifyCharge() && super.moveRight()) {
+        if(verifyCharge() && super.moveRight()) {
     	   setX(getX() + 1);
            charge--;
 		 return true;
-       }else {
+        }else {
     	   return false;
+         }
        }
-    }
 	@Override
 	public boolean moveLeft() {
-		if(verifyCharge() && super.moveLeft()) {
-			setX(getX() - 1);
-            charge--;
-		 return true;
+	if(verifyCharge() && super.moveLeft()) {
+		setX(getX() - 1);
+                charge--;
+		return true;
        }else {
     	   return false;
-       }
+           }
 	}
 	@Override
 	public boolean moveDown() {
-		if(verifyCharge() && super.moveDown()) {
-			setY(getY() + 1);
-            charge--;
-		 return true;
+	if(verifyCharge() && super.moveDown()) {
+		setY(getY() + 1);
+                charge--;
+		return true;
        }else {
     	   return false;
+           }
        }
-	}
 	@Override
 	public boolean moveUp() {
-		if(verifyCharge() && super.moveUp()) {
-			setY(getY() -1);
-            charge--;
-		 return true;
+	if(verifyCharge() && super.moveUp()) {
+		setY(getY() -1);
+                charge--;
+		return true;
        }else {
     	   return false;
+           }
        }
-	}
 	public boolean verifyCharge(){
         if(getCharge() >= 5 ) {
         	return true;
         }else {
         	return false;
+          }
         }
-     }
 	 public boolean moveDownRight() {
 	        return false;
 	    }
