@@ -6,8 +6,7 @@ public class DiagonalWalkTest {
 	public static int diagonalTest(AbstractRobot robot){
 		int percentage = 0;
 		
-		robot.setCharge(50);
-		robot.setY(50);
+	robot.setY(50);
         robot.setX(100);
         if (robot.moveDownRight()) {
             System.err.println("Diagonal moving test failed\nREASON: moveDownRight() out of bounds!");
