@@ -7,8 +7,8 @@ public class ChargeTest {
 		
 		int percentage = 0;
 	    
-		robot.setCharge(-100);
-	    if(robot.getCharge() < 0) {
+	robot.setCharge(-100);
+	if(robot.getCharge() < 0) {
 	    	System.err.println("Charge test failed\nREASON: Values less than 0 not allowed!");
 	    	return percentage;
         }
