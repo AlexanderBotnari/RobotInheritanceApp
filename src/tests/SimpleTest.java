@@ -10,7 +10,7 @@ public class SimpleTest {
 
 	        // name cannot be null
 	        robot.setName(null);
-			if( robot.getName() == null ) {
+		if( robot.getName() == null ) {
 	            System.err.println("Name test failed\nREASON: null name not allowed!");
 	            return percentage;
 	        }
