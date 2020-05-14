@@ -7,8 +7,8 @@ public class CharlieRobot extends BetaRobot{
 		super(name , model);
 	}
 	
-	public boolean moveDownRight() {
-		return super.moveDown() && super.moveRight();
+    public boolean moveDownRight() {
+	return super.moveDown() && super.moveRight();
 	}
     public boolean moveDownLeft() {
     	return super.moveDown() && super.moveLeft();
