@@ -1,9 +1,9 @@
 package tests;
 
-import robo.AbstractRobot;
+import robo.CharlieRobot;
 
 public class DiagonalWalkTest {
-	public static int diagonalTest(AbstractRobot robot){
+	public static int diagonalTest(CharlieRobot robot){
 		int percentage = 0;
 		
 	robot.setY(50);
