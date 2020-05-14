@@ -1,9 +1,9 @@
 package tests;
 
-import robo.AbstractRobot;
+import robo.BetaRobot;
 
 public class ChargeTest {
-	public static int chargeTest(AbstractRobot robot){
+	public static int chargeTest(BetaRobot robot){
 		
 		int percentage = 0;
 	    
